@@ -1,0 +1,40 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.hero__title {
+    font-size: var(--size-6xl);
+    color: var(--color-accent600);
+    letter-spacing: 0.05em;
+}
+
+.hero__title-span1 {
+    color: var(--color-light300);
+}
+
+.hero__title-span2 {
+    color: var(--color-accent500);
+    text-transform: uppercase;
+}
+
+.hero__title-span3 {
+    color: var(--color-accent400);
+    text-transform: uppercase;
+}
+
+.hero__description {
+    font-size: var(--size-xl);
+    width: 50ch;
+    line-height: 1.5em;
+    letter-spacing: 0.05em;
+}
+
+.hero__description span{
+    color: var(--color-accent400);
+    font-weight: 600;
+}

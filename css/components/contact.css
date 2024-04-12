@@ -1,0 +1,9 @@
+.contact {
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+}
+
+.contact__title {
+    font-size: var(--size-4xl);
+    font-weight: 500;
+}

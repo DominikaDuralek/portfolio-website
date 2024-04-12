@@ -1,0 +1,33 @@
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+/* @media (min-width: 1024px) {} */
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
+
+.container {
+    width: 100%;
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+
+.section {
+    min-height: 40rem;
+}
+
+.section__title__hr {
+    border: none;
+    height: 1px;
+    background-color: var(--color-accent500);
+}

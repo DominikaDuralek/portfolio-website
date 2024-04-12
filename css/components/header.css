@@ -1,0 +1,39 @@
+.header {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--color-accent400);
+    position: sticky;
+    top: 0;
+    background-color: var(--color-dark900);
+}
+
+.header__menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    gap: 2em;
+    padding: 0;
+}
+
+.header__link:hover {
+    text-decoration: underline;
+}
+
+.header__link-cv {
+    width: 5em;
+    height: 2em;
+    border: 1px var(--color-accent600) solid;
+    border-radius: 6px;
+}
+
+.header__link-cv:hover {
+    background-color: var(--color-accent400);
+}
+
+.header__sun {
+    display: block;
+    color: var(--color-light300);
+    width: var(--size-2xl);
+    height: var(--size-2xl);
+}
