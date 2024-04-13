@@ -1,9 +1,42 @@
 .contact {
     padding-top: 10rem;
     padding-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .contact__title {
     font-size: var(--size-4xl);
     font-weight: 500;
+}
+
+.contact__text {
+    display: flex;
+    align-items: center;
+    font-size: var(--size-2xl);
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.contact__text:hover {
+    color: var(--color-accent400);
+}
+
+.contact__icon-email {
+    width: var(--size-5xl);
+    height: var(--size-5xl);
+    color: var(--color-accent400);
+}
+
+.contact__icon-linkedin {
+    width: var(--size-5xl);
+    height: var(--size-5xl);
+    fill: var(--color-accent400);
+}
+
+.contact__icon-cv {
+    width: var(--size-5xl);
+    height: var(--size-5xl);
+    color: var(--color-accent400);
 }

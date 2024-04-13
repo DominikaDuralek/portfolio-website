@@ -13,9 +13,9 @@
 
 .skills__container {
     display: flex;
-    justify-content: space-around;
     font-size: var(--size-2xl);
     padding-top: 2rem;
+    justify-content: space-around;
 }
 
 .skills__list {
@@ -31,7 +31,6 @@
 
 .skills_list::before {
     content: '';
-    margin-left: 0.5em;
 }
 
 .skills__icons {

@@ -31,3 +31,28 @@
     height: 1px;
     background-color: var(--color-accent500);
 }
+
+.button-up {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: var(--color-accent600);
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.button-up:hover {
+    background-color: var(--color-accent500);
+}
+
+.button-up__icon {
+    width: 2rem;
+    height: 2rem;
+}

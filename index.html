@@ -7,7 +7,8 @@
   <meta name="keywords" content="portfolio, fullstack, webdev">
   <meta name="author" content="Dominika Duralek">
   <link rel="icon" type="image/svg+xml" href="" />
-  <link href="https://api.fontshare.com/v2/css?f[]=poppins@400,600,800&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=montserrat@400,600,700,800&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
   <title>Portfolio</title>
@@ -32,6 +33,11 @@
       </ul>
     </nav>
   </header>
+  <button onclick="topFunction()" class="button-up">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="button-up__icon">
+      <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+    </svg>
+  </button>
   <main>
     <section class="hero container section">
       <h1 class="hero__title">Hello, I'm <span class="hero__title-span1">Dominika</span>
@@ -62,7 +68,7 @@
       <hr class="section__title__hr">
       <div class="skills__container">
         <ul class="skills__list">
-          <li>JavaScript (ES6+)</li>
+          <li>JavaScript</li>
           <li>HTML</li>
           <li>CSS</li>
           <li>TailwindCSS</li>
@@ -130,13 +136,31 @@
         </div>
       </div>
     </section>
-    <section id="contact" class="contact container section">
+    <section id="contact" class="contact container">
       <h2 class="contact__title">Contact me</h2>
       <hr class="section__title__hr">
+      <p class="contact__text">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="contact__icon-email">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" /> 
+        </svg>
+        dominikaduralek@gmail.com
+      </p>
+      <p class="contact__text">
+        <svg viewBox="0 0 128 128" class="contact__icon-linkedin">
+          <path d="M116 3H12a8.91 8.91 0 00-9 8.8v104.42a8.91 8.91 0 009 8.78h104a8.93 8.93 0 009-8.81V11.77A8.93 8.93 0 00116 3zM39.17 107H21.06V48.73h18.11zm-9-66.21a10.5 10.5 0 1110.49-10.5 10.5 10.5 0 01-10.54 10.48zM107 107H88.89V78.65c0-6.75-.12-15.44-9.41-15.44s-10.87 7.36-10.87 15V107H50.53V48.73h17.36v8h.24c2.42-4.58 8.32-9.41 17.13-9.41C103.6 47.28 107 59.35 107 75z"></path>
+          </svg>
+        <a href="https://www.linkedin.com/in/dominika-dura%C5%82ek-4890252ba/" target="_blank">My LinkedIn profile</a>
+      </p>
+      <p class="contact__text">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="contact__icon-cv">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+        </svg>
+        <a href="#" target="_blank">My CV</a>
+      </p>
     </section>
   </main>
   <footer class="footer container">
-    Footer
+    <p>This portfolio website was made using vanilla JavaScript, HTML, CSS and Vite.</p>
   </footer>
 
   <script type="module" src="./js/main.js"></script>
