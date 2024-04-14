@@ -1,6 +1,5 @@
 import '../css/modern-normalize.css';
 import '../css/style.css';
-import '../css/utils.css';
 
 import '../css/components/header.css';
 import '../css/components/hero.css';
@@ -9,10 +8,19 @@ import '../css/components/skills.css';
 import '../css/components/projects.css';
 import '../css/components/contact.css';
 import '../css/components/footer.css';
+import '../css/utils.css';
 
-// Get the button
+import darkMode from './utils/dark-mode';
+
+darkMode();
+
+window.onload = function() {
+  document.body.className += " loaded";
+}
+
+// The 'up' button
 let buttonUp = document.querySelector('.button-up')
-buttonUp.addEventListener("click", goUp);
+buttonUp.addEventListener('click', goUp);
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollPage()};

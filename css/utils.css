@@ -32,27 +32,51 @@
     background-color: var(--color-accent500);
 }
 
+.button {
+    letter-spacing: 0.05em;
+    color: var(--color-accent400);
+    padding: 0.5em 1em;
+    border: 1px solid var(--color-accent400);
+    border-radius: 6px;
+
+    background: linear-gradient(to left, rgba(0, 0, 0, 0) 50%, var(--color-accent500) 50%) right;
+    background-size: 200%;
+    transition: background .5s ease-out, transform .5s ease-out, color .5s ease-out;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+    color: var(--color-light200);
+    background-position: left;
+    transition: .5s ease-out;
+}
+
 .button-up {
     display: none;
     position: fixed;
-    bottom: 50px;
-    right: 50px;
-    z-index: 99;
-    font-size: 18px;
-    border: none;
-    outline: none;
-    background-color: var(--color-accent600);
-    color: white;
+    bottom: 4rem;
+    right: 4rem;
+    border: 1px solid var(--color-accent400);
+    color: var(--color-accent400);
     cursor: pointer;
     padding: 10px;
     border-radius: 6px;
+    transition: 0.3s;
+    z-index: 99;
+
+    background: linear-gradient(to left, rgba(0, 0, 0, 0) 50%, var(--color-accent500) 50%) right;
+    background-size: 200%;
+    transition: background .5s ease-out, transform .5s ease-out, color .5s ease-out;
 }
 
 .button-up:hover {
-    background-color: var(--color-accent500);
+    transform: translateY(-5px);
+    background-position: left;
+    color: var(--color-light200);
 }
 
 .button-up__icon {
-    width: 2rem;
-    height: 2rem;
+    width: var(--size-2xl);
+    height: var(--size-xl);
+    stroke-width: 4;
 }

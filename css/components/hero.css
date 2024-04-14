@@ -10,7 +10,7 @@
 .hero__title {
     font-size: var(--size-6xl);
     color: var(--color-accent600);
-    letter-spacing: 0.05em;
+    /* letter-spacing: 0.05em; */
 }
 
 .hero__title-span1 {
@@ -29,7 +29,7 @@
 
 .hero__description {
     font-size: var(--size-xl);
-    width: 50ch;
+    width: 60ch;
     line-height: 1.5em;
     letter-spacing: 0.05em;
 }
