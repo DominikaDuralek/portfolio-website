@@ -11,20 +11,25 @@
     font-size: var(--size-6xl);
     color: var(--color-accent600);
     /* letter-spacing: 0.05em; */
+    overflow: hidden; 
+    transition: color 1.5s;
 }
 
 .hero__title-span1 {
     color: var(--color-light300);
+    transition: color 1.5s;
 }
 
 .hero__title-span2 {
     color: var(--color-accent500);
     text-transform: uppercase;
+    transition: color 1.5s;
 }
 
 .hero__title-span3 {
     color: var(--color-accent400);
     text-transform: uppercase;
+    transition: color 1.5s;
 }
 
 .hero__description {
@@ -32,9 +37,11 @@
     width: 60ch;
     line-height: 1.5em;
     letter-spacing: 0.05em;
+    transition: color 1.5s;
 }
 
-.hero__description span{
+.hero__description span {
     color: var(--color-accent400);
     font-weight: 600;
+    transition: color 1.5s;
 }

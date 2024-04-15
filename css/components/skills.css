@@ -1,6 +1,6 @@
 .skills {
     padding-top: 10rem;
-    padding-bottom: 5rem;
+    padding-bottom: 8rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -14,34 +14,16 @@
 .skills__container {
     display: flex;
     font-size: var(--size-2xl);
-    padding-top: 2rem;
+    padding-top: 4rem;
     justify-content: space-around;
 }
 
 .skills__list {
-    line-height: 2.5em;
+    line-height: 3em;
     list-style: none;
-    list-style-type: "\25A0\0020\0020\0020";
-    /* list-style-type: "\2B9E\0020\0020"; */
     letter-spacing: 0.05em;
 }
 
-.skills__list li::marker {
+.skills__list li i {
     color: var(--color-accent400);
-}
-
-.skills_list::before {
-    content: '';
-}
-
-.skills__icons {
-    display: flex;
-    justify-content: center;
-    gap: 2em;
-    margin-top: 2rem;
-}
-
-.skills__icons i {
-    font-size: var(--size-6xl);
-    color: var(--color-accent500);
 }

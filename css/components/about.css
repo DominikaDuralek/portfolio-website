@@ -14,7 +14,7 @@
 
 .about__content {
     display: flex;
-    gap: 5rem;
+    gap: 6rem;
     padding-top: 2rem;
 }
 
@@ -38,13 +38,59 @@
     color: var(--color-accent400);
 }
 
+.about__link {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.about__link:after {
+    content: '';
+    position: absolute;
+    width: 6em;
+    transform: scale(0);
+    height: 1px;
+    bottom: -0.25em;
+    background-color: var(--color-accent400);
+    transform-origin: center;
+    transition: transform 0.5s ease-out;
+}
+
+.about__link:hover {
+    cursor: pointer;
+}
+
+.about__link:hover:after {
+    transform: scale(1);
+    transform-origin: center;
+}
+
+.about__line {
+    border: 1px solid var(--color-accent400);
+    height: 2rem;
+}
+
 .about__summary {
+    /* display: none; */
+    display: flex;
     width: 60ch;
-    font-size: var(--size-xl);
+    font-size: var(--size-l);
     line-height: 1.5em;
     color: var(--color-light300);
 }
 
-.about__link:hover {
-    text-decoration: underline;
+.about__experience {
+    display: none;
+    width: 60ch;
+    font-size: var(--size-l);
+    line-height: 1.5em;
+    color: var(--color-light300);
+}
+
+.about__hobbies {
+    display: none;
+    width: 60ch;
+    font-size: var(--size-l);
+    line-height: 1.5em;
+    color: var(--color-light300);
 }
