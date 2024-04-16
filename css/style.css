@@ -50,6 +50,7 @@
 
 html {
     scroll-behavior: smooth;
+    /* scrollbar-color: var(--color-dark900) var(--color-dark800); */
 }
 
 body {

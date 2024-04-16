@@ -68,20 +68,57 @@ function showCopyAlert() {
 // link2 click = div2 flex div1 none div3 none
 // link3 click = div3 flex div1 none div2 none
 
-document.querySelector('#about__link-summary').addEventListener('click', function() {
+document.querySelector('#about__link-summary').addEventListener('click', function () {
   document.querySelector('.about__summary').style.display = 'flex';
   document.querySelector('.about__experience').style.display = 'none';
   document.querySelector('.about__hobbies').style.display = 'none';
 });
 
-document.querySelector('#about__link-experience').addEventListener('click', function() {
+document.querySelector('#about__link-experience').addEventListener('click', function () {
   document.querySelector('.about__summary').style.display = 'none';
   document.querySelector('.about__experience').style.display = 'flex';
   document.querySelector('.about__hobbies').style.display = 'none';
 });
 
-document.querySelector('#about__link-hobbies').addEventListener('click', function() {
+document.querySelector('#about__link-hobbies').addEventListener('click', function () {
   document.querySelector('.about__summary').style.display = 'none';
   document.querySelector('.about__experience').style.display = 'none';
   document.querySelector('.about__hobbies').style.display = 'flex';
 });
+
+var cursor = document.getElementById("circle");
+var cursorSmall = document.getElementById("circle-small");
+
+document.body.addEventListener("mousemove", function (e) {
+  cursor.style.left = e.clientX + "px",
+    cursor.style.top = e.clientY + "px";
+
+  cursorSmall.style.left = e.clientX + "px",
+    cursorSmall.style.top = e.clientY + "px";
+});
+
+const allLinks = document.querySelectorAll('a, button, .about__link, .contact__text-email');
+allLinks.forEach(link => {
+  link.onmouseover = function(){
+    cursor.style.width = 0;
+    cursor.style.height = 0;
+
+    cursorSmall.style.backgroundColor = "transparent";
+    cursorSmall.style.border = "1px solid rgba(150, 150, 150, 0.4)";
+    cursorSmall.style.outline = "1px solid rgba(255, 255, 255, 0.5)";
+    cursorSmall.style.width = '15px';
+    cursorSmall.style.height = '15px';
+  }
+  link.onmouseleave = function(){
+    cursor.style.width = '60px';
+    cursor.style.height = '60px';
+
+    cursorSmall.style.backgroundColor = "rgba(150, 150, 150, 0.4)";
+    cursorSmall.style.border = "none";
+    cursorSmall.style.outline = "none";
+    cursorSmall.style.width = '10px';
+    cursorSmall.style.height = '10px';
+  }
+});
+
+
