@@ -15,12 +15,22 @@
 .projects__container {
     display: flex;
     flex-direction: column;
-    padding-left: 4rem;
+    margin-top: 2rem;
+    padding-left: 2rem;
+}
+
+.projects__github {
+    /* align-self: center; */
+    font-weight: 500;
+}
+
+.projects__github a:hover {
+    color: var(--color-accent400);
 }
 
 .projects__item { 
     display: flex;
-    gap: 4rem;
+    gap: 5rem;
     margin-top: 5rem;
 }
 

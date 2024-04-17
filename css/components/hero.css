@@ -10,7 +10,6 @@
 .hero__title {
     font-size: var(--size-6xl);
     color: var(--color-accent600);
-    /* letter-spacing: 0.05em; */
     overflow: hidden; 
     transition: color 1.5s;
 }
