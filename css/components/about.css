@@ -101,5 +101,21 @@
     width: 70ch;
     line-height: 1.5em;
     color: var(--color-light300);
+    flex-direction: column;
+}
+
+.about__hobbies__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.about__icon-container {
+    font-size: var(--size-s);
+}
+
+.about__icon {
+    width: var(--size-s);
+    height: var(--size-s);
 }
 
