@@ -12,45 +12,73 @@
 }
 
 .header__menu {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    list-style: none;
-    gap: 2em;
-    padding: 0;
+    display: none;
 }
 
-.header__link {
-    display: flex;
-    justify-content: center;
-    position: relative;
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+@media (min-width: 768px) {
+    /* menu will only be displayed when the display reacher 768px */
+    .header__menu {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        list-style: none;
+        gap: 2em;
+        padding: 0;
+        font-size: var(--size-s);
+    }
+    
+    .header__link {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    
+    .header__link:after {
+        content: '';
+        position: absolute;
+        width: 4em;
+        transform: scale(0);
+        height: 1px;
+        bottom: -0.75em;
+        background-color: var(--color-accent400);
+        transform-origin: center;
+        transition: transform 0.5s ease-out;
+    }
+    
+    .header__link:hover:after {
+        transform: scale(1);
+        transform-origin: center;
+    }
+    
+    .header__line {
+        border: 1px solid var(--color-light300);
+        height: 2rem;
+    }
+    
+    
+    .header__sun {
+        display: block;
+        width: var(--size-2xl);
+        height: var(--size-2xl);
+    }
 }
 
-.header__link:after {
-    content: '';
-    position: absolute;
-    width: 4em;
-    transform: scale(0);
-    height: 1px;
-    bottom: -0.75em;
-    background-color: var(--color-accent400);
-    transform-origin: center;
-    transition: transform 0.5s ease-out;
+/* lg */
+@media (min-width: 1024px) {
+    .header__menu {
+        font-size: var(--size-base);
+    }
 }
 
-.header__link:hover:after {
-    transform: scale(1);
-    transform-origin: center;
-}
+/* xl */
+/* @media (min-width: 1280px) {} */
 
-.header__line {
-    border: 1px solid var(--color-light300);
-    height: 2rem;
-}
-
-
-.header__sun {
-    display: block;
-    width: var(--size-2xl);
-    height: var(--size-2xl);
-}
+/* 2xl */
+/* @media (min-width: 1536px) {} */

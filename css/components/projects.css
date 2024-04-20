@@ -20,7 +20,6 @@
 }
 
 .projects__github {
-    /* align-self: center; */
     font-weight: 500;
 }
 
@@ -42,7 +41,7 @@
 .projects__item__text {
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    gap: 2rem;
 }
 
 .projects__item__title {

@@ -28,11 +28,6 @@
     --size-10xl: 10rem;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
 .light-mode {
     --color-dark900: #f1f5f9;
     --color-dark800: #e2e8f0;
@@ -41,6 +36,11 @@
     --color-accent600: #4ade80;
     --color-accent500: #22c55e;
     --color-accent400: #16a34a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
 html {
@@ -65,4 +65,8 @@ button {
     background: none;
     cursor: pointer;
     color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
 }
