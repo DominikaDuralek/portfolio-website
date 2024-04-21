@@ -122,6 +122,7 @@
     }
 
     .circle {
+        visibility: visible;
         position: fixed;
         border-radius: 50%;
         transform: translateX(-50%) translateY(-50%);
@@ -137,6 +138,7 @@
     }
     
     .circle-small {
+        visibility: visible;
         position: fixed;
         border-radius: 50%;
         transform: translateX(-50%) translateY(-50%);

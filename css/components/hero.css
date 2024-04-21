@@ -3,10 +3,10 @@
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     align-items: center;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .hero__title {
@@ -39,7 +39,7 @@
     line-height: 1.5em;
     letter-spacing: 0.05em;
     transition: color 1.5s;
-    text-align: center;
+    text-align: justify;
 }
 
 .hero__description span {
