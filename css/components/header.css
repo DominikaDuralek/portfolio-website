@@ -15,12 +15,6 @@
     display: none;
 }
 
-/* xs */
-/* @media (min-width: 475px) {} */
-
-/* sm */
-/* @media (min-width: 640px) {} */
-
 /* md */
 @media (min-width: 768px) {
     /* menu will only be displayed when the display reacher 768px */
@@ -76,9 +70,3 @@
         font-size: var(--size-base);
     }
 }
-
-/* xl */
-/* @media (min-width: 1280px) {} */
-
-/* 2xl */
-/* @media (min-width: 1536px) {} */

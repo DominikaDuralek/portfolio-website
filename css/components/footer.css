@@ -16,11 +16,6 @@
 /* md */
 @media (min-width: 768px) {
     .footer {
-        background-color: var(--color-dark800);
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        color: var(--color-light300);
-        text-align: center;
         font-size: var(--size-base);
     }
 }

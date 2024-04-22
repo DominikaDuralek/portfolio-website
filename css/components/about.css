@@ -76,7 +76,6 @@
 }
 
 .about__summary {
-    /* display: none; */
     display: flex;
     width: 40ch;
     line-height: 1.5em;
@@ -119,27 +118,17 @@
     height: var(--size-s);
 }
 
-/* xs */
-/* @media (min-width: 475px) {} */
-
-/* sm */
-/* @media (min-width: 640px) {} */
-
 /* md */
 @media (min-width: 768px) {
     .about {
-        background-color: var(--color-dark800);
         padding-top: 10rem;
         padding-bottom: 5rem;
-        display: flex;
-        flex-direction: column;
         gap: 1rem;
         min-height: 48rem;
     }
     
     .about__title {
         font-size: var(--size-4xl);
-        font-weight: 500;
     }
     
     .about__content {
@@ -154,97 +143,40 @@
     .about__img {
         width: 20rem;
         height: 20rem;
-        border: 1px solid var(--color-accent400);
     }
     
     .about__text {
-        display: flex;
-        flex-direction: column;
-        gap: 3rem;
-        align-items: center;
         font-size: var(--size-base);
     }
-    
+
     .about__menu {
-        list-style: none;
-        display: flex;
         gap: 3rem;
         font-size: var(--size-2xl);
-        color: var(--color-accent400);
-    }
-    
-    .about__link {
-        display: flex;
-        justify-content: center;
-        position: relative;
-    }
-    
-    .about__link:after {
-        content: '';
-        position: absolute;
-        width: 6em;
-        transform: scale(0);
-        height: 1px;
-        bottom: -0.25em;
-        background-color: var(--color-accent400);
-        transform-origin: center;
-        transition: transform 0.5s ease-out;
-    }
-    
-    .about__link:hover {
-        cursor: pointer;
-    }
-    
-    .about__link:hover:after {
-        transform: scale(1);
-        transform-origin: center;
-    }
-    
-    .about__line {
-        border: 1px solid var(--color-accent400);
-        height: 2rem;
     }
     
     .about__summary {
-        /* display: none; */
-        display: flex;
         width: 80ch;
-        line-height: 1.5em;
-        color: var(--color-light300);
-        font-size: var(--size-base);
     }
     
     .about__experience {
-        display: none;
         width: 80ch;
-        line-height: 1.5em;
-        color: var(--color-light300);
     }
     
     .about__hobbies {
-        display: none;
         width: 80ch;
-        color: var(--color-light300);
-        flex-direction: column;
-        gap: 2rem;
-        align-items: center;
     }
     
     .about__hobbies__items {
         display: flex;
         flex-direction: row;
-        justify-content: center;
         gap: 10rem;
     }
     
     .about__hobbies__list {
-        list-style: none;
-        color: var(--color-accent400);
         line-height: 3.5em;
     }
     
     .about__hobbies__icon {
-        fill: var(--color-accent400);
         width: var(--size-2xl);
         height: var(--size-2xl);
     }

@@ -59,73 +59,39 @@
     color: var(--color-accent400);
 }
 
-/* xs */
-/* @media (min-width: 475px) {} */
-
-/* sm */
-/* @media (min-width: 640px) {} */
-
 /* md */
 @media (min-width: 768px) {
     .contact {
         padding-top: 10rem;
         padding-bottom: 5rem;
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
     }
     
     .contact__title {
         font-size: var(--size-4xl);
-        font-weight: 500;
     }
     
     .contact__text {
-        display: flex;
-        align-items: center;
         font-size: var(--size-2xl);
         gap: 2rem;
-        margin-top: 1.5rem;
-        letter-spacing: 0.05em;
-    }
-    
-    .contact__text:hover {
-        color: var(--color-accent400);
     }
     
     .contact__icon-email {
         width: var(--size-5xl);
         height: var(--size-5xl);
-        color: var(--color-accent400);
-    }
-    
-    .contact__text-email {
-        cursor: pointer;
     }
     
     .contact__copied {
-        visibility: hidden;
-        color: var(--color-accent400);
         font-size: var(--size-base);
-        border: 1px solid var(--color-accent400);
-        border-radius: 6px;
-        padding: 0.5em;
-    }
-    
-    .contact__copied.show {
-        visibility: visible;
     }
     
     .contact__icon-linkedin {
         width: var(--size-5xl);
         height: var(--size-5xl);
-        fill: var(--color-accent400);
     }
     
     .contact__icon-cv {
         width: var(--size-5xl);
         height: var(--size-5xl);
-        color: var(--color-accent400);
     }
 }
 

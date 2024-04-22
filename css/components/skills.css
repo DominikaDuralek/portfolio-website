@@ -13,11 +13,6 @@
 
 .skills__container {
     display: none;
-    /* flex-direction: column;
-    font-size: var(--size-l);
-    padding-top: 2rem;
-    justify-content: center;
-    align-items: center; */
 }
 
 .skills__container2 {
@@ -40,25 +35,15 @@
     color: var(--color-accent400);
 }
 
-/* xs */
-/* @media (min-width: 475px) {} */
-
-/* sm */
-/* @media (min-width: 640px) {} */
-
 /* md */
 @media (min-width: 768px) {
     .skills {
         padding-top: 10rem;
         padding-bottom: 8rem;
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
     }
     
     .skills__title {
         font-size: var(--size-4xl);
-        font-weight: 500;
     }
     
     .skills__container {
@@ -76,12 +61,6 @@
     
     .skills__list {
         line-height: 3em;
-        list-style: none;
-        letter-spacing: 0.05em;
-    }
-    
-    .skills__list li i {
-        color: var(--color-accent400);
     }
 }
 
