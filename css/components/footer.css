@@ -10,15 +10,13 @@
 /* md */
 @media (min-width: 768px) {
     .footer {
-        font-size: var(--size-base);
+        font-size: var(--size-s);
     }
 }
 
-/* lg */
-/* @media (min-width: 1024px) {} */
-
-/* xl */
-/* @media (min-width: 1280px) {} */
-
 /* 2xl */
-/* @media (min-width: 1536px) {} */
+@media (min-width: 1536px) {
+    .footer {
+        font-size: var(--size-base);
+    }
+}

@@ -24,26 +24,72 @@
         <li><a class="header__link" href="#contact">Contact</a></li>
         <li class="header__line"></li>
         <li><button id="theme-toggle" class="header__sun">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
-          </svg>          
-        </button></li>
-        <li><a href="CV-Dominika-Duralek.pdf" target="_blank"><button class="header__link-cv button" href="#cv"><span>CV</span></button></a></li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
+            </svg>
+          </button></li>
+        <li><a href="CV-Dominika-Duralek.pdf" target="_blank"><button class="header__link-cv button"
+              href="#cv"><span>CV</span></button></a></li>
       </ul>
+      <button aria-label="mobile nav button" class="header__bars">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            fill-rule="evenodd"
+            d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </button>
     </nav>
   </header>
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav">
+    <nav>
+      <ul class="mobile-nav__menu">
+        <li>
+          <a class="mobile-nav__link" href="#about">About</a>
+        </li>
+        <li>
+          <a class="mobile-nav__link" href="#skills">Skills</a>
+        </li>
+        <li>
+          <a class="mobile-nav__link" href="#projects">Projects</a>
+        </li>
+        <li>
+          <a class="mobile-nav__link" href="#contact">Contact</a>
+        </li>
+        <li class="mobile-nav__link-line"></li>
+        <li>
+          <button aria-label="theme-toggle btn" id="theme-toggle" class="mobile-nav__sun">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
+            </svg>
+          </button>
+        </li>
+        <li><a href="CV-Dominika-Duralek.pdf" target="_blank"><button class="header__link-cv button"
+          href="#cv"><span>CV</span></button></a></li>
+      </ul>
+    </nav>
+  </div>
+  <!-- End of Mobile Navigation -->
   <span id="circle" class="circle"></span>
   <span id="circle-small" class="circle-small"></span>
   <button onclick="topFunction()" class="button-up">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="button-up__icon">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+      class="button-up__icon">
       <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
     </svg>
   </button>
   <main>
     <section id="hero" class="hero container section">
       <h1 class="hero__title">Hello, I'm <span class="hero__title-span1">Dominika</span>
-      <br><span class="hero__title-span2">Full-stack</span> <span class="hero__title-span3">web dev</span></h1>
-      <p class="hero__description">I'm a curious engineer/programmer focused on creating <span>responsive</span> and <span>user-friendly</span> apps with <span>clean code</span> and best practices. I'm always learning and improving, looking forward to gaining professional experience.</p>
+        <br><span class="hero__title-span2">Full-stack</span> <span class="hero__title-span3">web dev</span>
+      </h1>
+      <p class="hero__description">I'm a curious engineer/programmer focused on creating <span>responsive</span> and
+        <span>user-friendly</span> apps with <span>clean code</span> and best practices. I'm always learning and
+        improving, looking forward to gaining professional experience.</p>
     </section>
     <section id="about" class="about container">
       <h2 class="about__title" data-aos="fade-left">About me</h2>
@@ -60,20 +106,27 @@
           </ul>
           <div class="about__summary">
             <p>
-              I'm a recent IT graduate based in Poland. I'm a creative, extremely well-organised and hard-working individual with a perfectionist side.
+              I'm a recent IT graduate based in Poland. I'm a creative, extremely well-organised and hard-working
+              individual with a perfectionist side.
               <br><br>
-              My love for programming stems from it allowing me to create things from scratch. Seeing lines of code turn into something that works is one of my biggest joys in life.
+              My love for programming stems from it allowing me to create things from scratch. Seeing lines of code turn
+              into something that works is one of my biggest joys in life.
               <br><br>
-              I'm an artist and I treat coding as a form of art. From carefully planning a project, through development to a finished product, I enjoy every step of the process.
+              I'm an artist and I treat coding as a form of art. From carefully planning a project, through development
+              to a finished product, I enjoy every step of the process.
             </p>
           </div>
           <div class="about__experience">
             <p>
-              I graduated from Politechnika Bydgoska in 2024, specializing in Information Technologies. My university experience equipped me with a&nbsp;strong foundation and sparked my interest in programming.
+              I graduated from Politechnika Bydgoska in 2024, specializing in Information Technologies. My university
+              experience equipped me with a&nbsp;strong foundation and sparked my interest in programming.
               <br><br>
-              During my studies, I actively participated in numerous student projects and completed an IT internship. For my Engineer's Thesis, I&nbsp;designed and developed a mobile app featuring minigames using the Unity game engine, earning the highest grade on my diploma.
+              During my studies, I actively participated in numerous student projects and completed an IT internship.
+              For my Engineer's Thesis, I&nbsp;designed and developed a mobile app featuring minigames using the Unity
+              game engine, earning the highest grade on my diploma.
               <br><br>
-              Following graduation, I made the decision to pursue web development. Currently, I am focused on creating independent projects to further refine and expand my skill set.
+              Following graduation, I made the decision to pursue web development. Currently, I am focused on creating
+              independent projects to further refine and expand my skill set.
             </p>
           </div>
           <div class="about__hobbies">
@@ -81,26 +134,140 @@
             <div class="about__hobbies__items">
               <ul class="about__hobbies__list">
                 <li>
-                  <svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 426.867 426.867" xml:space="preserve" class="about__hobbies__icon"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M403.941,149.373c-2.344-2.344-5.521-3.661-8.838-3.661h-169.17V79.772c0-6.904-5.597-12.5-12.5-12.5 s-12.5,5.596-12.5,12.5v65.939H31.765c-3.315,0-6.495,1.317-8.839,3.661L3.661,168.638C1.317,170.981,0,174.162,0,177.477v150.353 c0,3.315,1.317,6.496,3.661,8.84l19.265,19.265c2.344,2.344,5.523,3.661,8.839,3.661h363.338c3.314,0,6.494-1.317,8.838-3.661 l19.266-19.265c2.344-2.344,3.66-5.524,3.66-8.84V177.477c0-3.315-1.316-6.495-3.66-8.839L403.941,149.373z M401.867,322.651 l-11.941,11.943H36.943l-11.942-11.943V182.655l11.942-11.943h352.983l11.941,11.943V322.651L401.867,322.651z"></path> <path d="M143.394,236.272h-26.46v-26.459c0-6.904-5.597-12.5-12.5-12.5s-12.5,5.596-12.5,12.5v26.459h-26.46 c-6.903,0-12.5,5.598-12.5,12.5c0,6.903,5.597,12.5,12.5,12.5h26.46v26.459c0,6.904,5.597,12.5,12.5,12.5s12.5-5.596,12.5-12.5 v-26.459h26.46c6.903,0,12.5-5.597,12.5-12.5C155.894,241.87,150.297,236.272,143.394,236.272z"></path> <path d="M302.797,205.479H280.26c-3.312,0-6,2.687-6,6v22.537c0,3.312,2.688,6,6,6h22.537c3.312,0,6-2.688,6-6v-22.537 C308.797,208.166,306.111,205.479,302.797,205.479z"></path> <path d="M371.035,205.479h-22.537c-3.312,0-6,2.687-6,6v22.537c0,3.312,2.688,6,6,6h22.537c3.312,0,6-2.688,6-6v-22.537 C377.035,208.166,374.348,205.479,371.035,205.479z"></path> <path d="M275.172,265.085h-22.537c-3.313,0-6,2.687-6,6v22.537c0,3.312,2.687,6,6,6h22.537c3.312,0,6-2.688,6-6v-22.537 C281.172,267.771,278.484,265.085,275.172,265.085z"></path> <path d="M343.408,265.085h-22.537c-3.312,0-6,2.687-6,6v22.537c0,3.312,2.688,6,6,6h22.537c3.312,0,6-2.688,6-6v-22.537 C349.408,267.771,346.721,265.085,343.408,265.085z"></path> </g> </g> </g></svg> game dev / gaming
+                  <svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 426.867 426.867" xml:space="preserve"
+                    class="about__hobbies__icon">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <g>
+                        <g>
+                          <path
+                            d="M403.941,149.373c-2.344-2.344-5.521-3.661-8.838-3.661h-169.17V79.772c0-6.904-5.597-12.5-12.5-12.5 s-12.5,5.596-12.5,12.5v65.939H31.765c-3.315,0-6.495,1.317-8.839,3.661L3.661,168.638C1.317,170.981,0,174.162,0,177.477v150.353 c0,3.315,1.317,6.496,3.661,8.84l19.265,19.265c2.344,2.344,5.523,3.661,8.839,3.661h363.338c3.314,0,6.494-1.317,8.838-3.661 l19.266-19.265c2.344-2.344,3.66-5.524,3.66-8.84V177.477c0-3.315-1.316-6.495-3.66-8.839L403.941,149.373z M401.867,322.651 l-11.941,11.943H36.943l-11.942-11.943V182.655l11.942-11.943h352.983l11.941,11.943V322.651L401.867,322.651z">
+                          </path>
+                          <path
+                            d="M143.394,236.272h-26.46v-26.459c0-6.904-5.597-12.5-12.5-12.5s-12.5,5.596-12.5,12.5v26.459h-26.46 c-6.903,0-12.5,5.598-12.5,12.5c0,6.903,5.597,12.5,12.5,12.5h26.46v26.459c0,6.904,5.597,12.5,12.5,12.5s12.5-5.596,12.5-12.5 v-26.459h26.46c6.903,0,12.5-5.597,12.5-12.5C155.894,241.87,150.297,236.272,143.394,236.272z">
+                          </path>
+                          <path
+                            d="M302.797,205.479H280.26c-3.312,0-6,2.687-6,6v22.537c0,3.312,2.688,6,6,6h22.537c3.312,0,6-2.688,6-6v-22.537 C308.797,208.166,306.111,205.479,302.797,205.479z">
+                          </path>
+                          <path
+                            d="M371.035,205.479h-22.537c-3.312,0-6,2.687-6,6v22.537c0,3.312,2.688,6,6,6h22.537c3.312,0,6-2.688,6-6v-22.537 C377.035,208.166,374.348,205.479,371.035,205.479z">
+                          </path>
+                          <path
+                            d="M275.172,265.085h-22.537c-3.313,0-6,2.687-6,6v22.537c0,3.312,2.687,6,6,6h22.537c3.312,0,6-2.688,6-6v-22.537 C281.172,267.771,278.484,265.085,275.172,265.085z">
+                          </path>
+                          <path
+                            d="M343.408,265.085h-22.537c-3.312,0-6,2.687-6,6v22.537c0,3.312,2.688,6,6,6h22.537c3.312,0,6-2.688,6-6v-22.537 C349.408,267.771,346.721,265.085,343.408,265.085z">
+                          </path>
+                        </g>
+                      </g>
+                    </g>
+                  </svg> game dev / gaming
                 </li>
                 <li>
-                  <svg fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="about__hobbies__icon"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M6,7A1,1,0,0,1,7,8v8a1,1,0,0,1-2,0V8A1,1,0,0,1,6,7Zm5.293,1.627L14.919,5H4A1,1,0,0,0,3,6V18a1,1,0,0,0,1,1H20a1,1,0,0,0,1-1V10a1,1,0,0,1,2,0v8a3,3,0,0,1-3,3H4a3,3,0,0,1-3-3V6A3,3,0,0,1,4,3H16.919l1.707-1.707a1.029,1.029,0,0,1,1.414,0L22.707,3.96a1,1,0,0,1,0,1.414l-7.334,7.333a1,1,0,0,1-.707.293H12a1,1,0,0,1-1-1V9.334A1,1,0,0,1,11.293,8.627ZM13,11h1.252l6.334-6.333L19.333,3.414,13,9.748Z"></path></g></svg> drawing
+                  <svg fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                    class="about__hobbies__icon">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        d="M6,7A1,1,0,0,1,7,8v8a1,1,0,0,1-2,0V8A1,1,0,0,1,6,7Zm5.293,1.627L14.919,5H4A1,1,0,0,0,3,6V18a1,1,0,0,0,1,1H20a1,1,0,0,0,1-1V10a1,1,0,0,1,2,0v8a3,3,0,0,1-3,3H4a3,3,0,0,1-3-3V6A3,3,0,0,1,4,3H16.919l1.707-1.707a1.029,1.029,0,0,1,1.414,0L22.707,3.96a1,1,0,0,1,0,1.414l-7.334,7.333a1,1,0,0,1-.707.293H12a1,1,0,0,1-1-1V9.334A1,1,0,0,1,11.293,8.627ZM13,11h1.252l6.334-6.333L19.333,3.414,13,9.748Z">
+                      </path>
+                    </g>
+                  </svg> drawing
                 </li>
                 <li>
-                  <svg fill="#000000" height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512.001 512.001" xml:space="preserve" class="about__hobbies__icon"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M507.111,483.499L279.611,256L382.52,153.09c13.2,8.753,29.013,13.866,46.002,13.866c46.03,0,83.478-37.448,83.478-83.478 S474.552,0,428.522,0s-83.478,37.448-83.478,83.478c0,16.99,5.113,32.801,13.865,46.001L256,232.389L153.092,129.48 c8.752-13.201,13.865-29.013,13.865-46.002C166.957,37.448,129.508,0,83.478,0S0,37.448,0,83.478s37.448,83.478,83.478,83.478 c16.99,0,32.801-5.113,46.002-13.866L232.389,256L4.891,483.499c-6.52,6.52-6.52,17.091,0,23.611 c6.519,6.52,17.091,6.521,23.611,0L256,279.611L483.5,507.11c6.519,6.52,17.091,6.521,23.611,0 C513.631,500.59,513.631,490.02,507.111,483.499z M428.522,33.391c27.618,0,50.087,22.469,50.087,50.087 c0,27.618-22.469,50.087-50.087,50.087s-50.087-22.469-50.087-50.087C378.435,55.86,400.904,33.391,428.522,33.391z M83.478,133.565c-27.618,0-50.087-22.469-50.087-50.087c0-27.618,22.469-50.087,50.087-50.087 c27.618,0,50.087,22.469,50.087,50.087C133.565,111.096,111.096,133.565,83.478,133.565z"></path> </g> </g> </g></svg> crocheting / handicraft
+                  <svg fill="#000000" height="200px" width="200px" version="1.1" id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 512.001 512.001" xml:space="preserve" class="about__hobbies__icon">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <g>
+                        <g>
+                          <path
+                            d="M507.111,483.499L279.611,256L382.52,153.09c13.2,8.753,29.013,13.866,46.002,13.866c46.03,0,83.478-37.448,83.478-83.478 S474.552,0,428.522,0s-83.478,37.448-83.478,83.478c0,16.99,5.113,32.801,13.865,46.001L256,232.389L153.092,129.48 c8.752-13.201,13.865-29.013,13.865-46.002C166.957,37.448,129.508,0,83.478,0S0,37.448,0,83.478s37.448,83.478,83.478,83.478 c16.99,0,32.801-5.113,46.002-13.866L232.389,256L4.891,483.499c-6.52,6.52-6.52,17.091,0,23.611 c6.519,6.52,17.091,6.521,23.611,0L256,279.611L483.5,507.11c6.519,6.52,17.091,6.521,23.611,0 C513.631,500.59,513.631,490.02,507.111,483.499z M428.522,33.391c27.618,0,50.087,22.469,50.087,50.087 c0,27.618-22.469,50.087-50.087,50.087s-50.087-22.469-50.087-50.087C378.435,55.86,400.904,33.391,428.522,33.391z M83.478,133.565c-27.618,0-50.087-22.469-50.087-50.087c0-27.618,22.469-50.087,50.087-50.087 c27.618,0,50.087,22.469,50.087,50.087C133.565,111.096,111.096,133.565,83.478,133.565z">
+                          </path>
+                        </g>
+                      </g>
+                    </g>
+                  </svg> crocheting / handicraft
                 </li>
               </ul>
               <ul class="about__hobbies__list">
                 <li>
-                  <svg version="1.1" id="Uploaded to svgrepo.com" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve" fill="#000000" class="about__hobbies__icon"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> </style> <g> <g> <path class="open_een" d="M19.5,11h7c0.276,0,0.5-0.224,0.5-0.5S26.776,10,26.5,10h-7c-0.276,0-0.5,0.224-0.5,0.5 S19.224,11,19.5,11z"></path> <path class="open_een" d="M19.5,14h7c0.276,0,0.5-0.224,0.5-0.5S26.776,13,26.5,13h-7c-0.276,0-0.5,0.224-0.5,0.5 S19.224,14,19.5,14z"></path> <path class="open_een" d="M19.5,17h7c0.276,0,0.5-0.224,0.5-0.5S26.776,16,26.5,16h-7c-0.276,0-0.5,0.224-0.5,0.5 S19.224,17,19.5,17z"></path> <path class="open_een" d="M19.5,20h7c0.276,0,0.5-0.224,0.5-0.5S26.776,19,26.5,19h-7c-0.276,0-0.5,0.224-0.5,0.5 S19.224,20,19.5,20z"></path> <path class="open_een" d="M28.5,5h-10C18.224,5,18,5.224,18,5.5S18.224,6,18.5,6h10C28.776,6,29,6.225,29,6.5v19 c0,0.275-0.224,0.5-0.5,0.5h-25C3.224,26,3,25.775,3,25.5v-19C3,6.225,3.224,6,3.5,6H15v17.5c0,0.276,0.224,0.5,0.5,0.5 s0.5-0.224,0.5-0.5v-18C16,5.224,15.776,5,15.5,5h-12C2.673,5,2,5.673,2,6.5v19C2,26.327,2.673,27,3.5,27h25 c0.827,0,1.5-0.673,1.5-1.5v-19C30,5.673,29.327,5,28.5,5z"></path> </g> <g> <path class="open_een" d="M19.5,11h7c0.276,0,0.5-0.224,0.5-0.5S26.776,10,26.5,10h-7c-0.276,0-0.5,0.224-0.5,0.5 S19.224,11,19.5,11z"></path> <path class="open_een" d="M19.5,14h7c0.276,0,0.5-0.224,0.5-0.5S26.776,13,26.5,13h-7c-0.276,0-0.5,0.224-0.5,0.5 S19.224,14,19.5,14z"></path> <path class="open_een" d="M19.5,17h7c0.276,0,0.5-0.224,0.5-0.5S26.776,16,26.5,16h-7c-0.276,0-0.5,0.224-0.5,0.5 S19.224,17,19.5,17z"></path> <path class="open_een" d="M19.5,20h7c0.276,0,0.5-0.224,0.5-0.5S26.776,19,26.5,19h-7c-0.276,0-0.5,0.224-0.5,0.5 S19.224,20,19.5,20z"></path> <path class="open_een" d="M28.5,5h-10C18.224,5,18,5.224,18,5.5S18.224,6,18.5,6h10C28.776,6,29,6.225,29,6.5v19 c0,0.275-0.224,0.5-0.5,0.5h-25C3.224,26,3,25.775,3,25.5v-19C3,6.225,3.224,6,3.5,6H15v17.5c0,0.276,0.224,0.5,0.5,0.5 s0.5-0.224,0.5-0.5v-18C16,5.224,15.776,5,15.5,5h-12C2.673,5,2,5.673,2,6.5v19C2,26.327,2.673,27,3.5,27h25 c0.827,0,1.5-0.673,1.5-1.5v-19C30,5.673,29.327,5,28.5,5z"></path> </g> </g> </g></svg>
+                  <svg version="1.1" id="Uploaded to svgrepo.com" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve" fill="#000000"
+                    class="about__hobbies__icon">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <style type="text/css"> </style>
+                      <g>
+                        <g>
+                          <path class="open_een"
+                            d="M19.5,11h7c0.276,0,0.5-0.224,0.5-0.5S26.776,10,26.5,10h-7c-0.276,0-0.5,0.224-0.5,0.5 S19.224,11,19.5,11z">
+                          </path>
+                          <path class="open_een"
+                            d="M19.5,14h7c0.276,0,0.5-0.224,0.5-0.5S26.776,13,26.5,13h-7c-0.276,0-0.5,0.224-0.5,0.5 S19.224,14,19.5,14z">
+                          </path>
+                          <path class="open_een"
+                            d="M19.5,17h7c0.276,0,0.5-0.224,0.5-0.5S26.776,16,26.5,16h-7c-0.276,0-0.5,0.224-0.5,0.5 S19.224,17,19.5,17z">
+                          </path>
+                          <path class="open_een"
+                            d="M19.5,20h7c0.276,0,0.5-0.224,0.5-0.5S26.776,19,26.5,19h-7c-0.276,0-0.5,0.224-0.5,0.5 S19.224,20,19.5,20z">
+                          </path>
+                          <path class="open_een"
+                            d="M28.5,5h-10C18.224,5,18,5.224,18,5.5S18.224,6,18.5,6h10C28.776,6,29,6.225,29,6.5v19 c0,0.275-0.224,0.5-0.5,0.5h-25C3.224,26,3,25.775,3,25.5v-19C3,6.225,3.224,6,3.5,6H15v17.5c0,0.276,0.224,0.5,0.5,0.5 s0.5-0.224,0.5-0.5v-18C16,5.224,15.776,5,15.5,5h-12C2.673,5,2,5.673,2,6.5v19C2,26.327,2.673,27,3.5,27h25 c0.827,0,1.5-0.673,1.5-1.5v-19C30,5.673,29.327,5,28.5,5z">
+                          </path>
+                        </g>
+                        <g>
+                          <path class="open_een"
+                            d="M19.5,11h7c0.276,0,0.5-0.224,0.5-0.5S26.776,10,26.5,10h-7c-0.276,0-0.5,0.224-0.5,0.5 S19.224,11,19.5,11z">
+                          </path>
+                          <path class="open_een"
+                            d="M19.5,14h7c0.276,0,0.5-0.224,0.5-0.5S26.776,13,26.5,13h-7c-0.276,0-0.5,0.224-0.5,0.5 S19.224,14,19.5,14z">
+                          </path>
+                          <path class="open_een"
+                            d="M19.5,17h7c0.276,0,0.5-0.224,0.5-0.5S26.776,16,26.5,16h-7c-0.276,0-0.5,0.224-0.5,0.5 S19.224,17,19.5,17z">
+                          </path>
+                          <path class="open_een"
+                            d="M19.5,20h7c0.276,0,0.5-0.224,0.5-0.5S26.776,19,26.5,19h-7c-0.276,0-0.5,0.224-0.5,0.5 S19.224,20,19.5,20z">
+                          </path>
+                          <path class="open_een"
+                            d="M28.5,5h-10C18.224,5,18,5.224,18,5.5S18.224,6,18.5,6h10C28.776,6,29,6.225,29,6.5v19 c0,0.275-0.224,0.5-0.5,0.5h-25C3.224,26,3,25.775,3,25.5v-19C3,6.225,3.224,6,3.5,6H15v17.5c0,0.276,0.224,0.5,0.5,0.5 s0.5-0.224,0.5-0.5v-18C16,5.224,15.776,5,15.5,5h-12C2.673,5,2,5.673,2,6.5v19C2,26.327,2.673,27,3.5,27h25 c0.827,0,1.5-0.673,1.5-1.5v-19C30,5.673,29.327,5,28.5,5z">
+                          </path>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
                   comic books / manga
                 </li>
                 <li>
-                  <svg fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="about__hobbies__icon"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M18,6H14.41l2.3-2.29a1,1,0,1,0-1.42-1.42L12,5.54l-1.17-2a1,1,0,1,0-1.74,1L10,6H6A3,3,0,0,0,3,9v8a3,3,0,0,0,3,3v1a1,1,0,0,0,2,0V20h8v1a1,1,0,0,0,2,0V20a3,3,0,0,0,3-3V9A3,3,0,0,0,18,6Zm1,11a1,1,0,0,1-1,1H6a1,1,0,0,1-1-1V9A1,1,0,0,1,6,8H18a1,1,0,0,1,1,1Z"></path></g></svg>
+                  <svg fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                    class="about__hobbies__icon">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        d="M18,6H14.41l2.3-2.29a1,1,0,1,0-1.42-1.42L12,5.54l-1.17-2a1,1,0,1,0-1.74,1L10,6H6A3,3,0,0,0,3,9v8a3,3,0,0,0,3,3v1a1,1,0,0,0,2,0V20h8v1a1,1,0,0,0,2,0V20a3,3,0,0,0,3-3V9A3,3,0,0,0,18,6Zm1,11a1,1,0,0,1-1,1H6a1,1,0,0,1-1-1V9A1,1,0,0,1,6,8H18a1,1,0,0,1,1,1Z">
+                      </path>
+                    </g>
+                  </svg>
                   cartoons
                 </li>
                 <li>
-                  <svg fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="about__hobbies__icon"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M2.594,18.914l9,4H11.6a.974.974,0,0,0,.8,0h.008l9-4A1,1,0,0,0,22,18V6a1.04,1.04,0,0,0-.594-.914l-9-4a1,1,0,0,0-.812,0l-9,4A1.041,1.041,0,0,0,2,6V18A1,1,0,0,0,2.594,18.914ZM4,7.539l7,3.111v9.811L4,17.35ZM20,17.35l-7,3.111V10.65l7-3.111ZM12,3.094,18.538,6,12,8.906,5.462,6Z"></path></g></svg>
+                  <svg fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                    class="about__hobbies__icon">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        d="M2.594,18.914l9,4H11.6a.974.974,0,0,0,.8,0h.008l9-4A1,1,0,0,0,22,18V6a1.04,1.04,0,0,0-.594-.914l-9-4a1,1,0,0,0-.812,0l-9,4A1.041,1.041,0,0,0,2,6V18A1,1,0,0,0,2.594,18.914ZM4,7.539l7,3.111v9.811L4,17.35ZM20,17.35l-7,3.111V10.65l7-3.111ZM12,3.094,18.538,6,12,8.906,5.462,6Z">
+                      </path>
+                    </g>
+                  </svg>
                   3d modeling / printing
                 </li>
               </ul>
@@ -155,12 +322,15 @@
       <h2 class="projects__title" data-aos="fade-left">Projects</h2>
       <hr class="section__title__hr">
       <div class="projects__container">
-        <h2 class="projects__github">View more of my work and code on <a href="https://github.com/DominikaDuralek" target="_blank">GitHub <i class="devicon-github-original"></a></i></h2>
+        <h2 class="projects__github">View more of my work and code on <a href="https://github.com/DominikaDuralek"
+            target="_blank">GitHub <i class="devicon-github-original"></a></i></h2>
         <div class="projects__item">
           <img src="" alt="" class="projects__item__img">
           <div class="projects__item__text" data-aos="fade-left" data-aos-delay="100">
             <h2 class="projects__item__title">Weather Station Dashboard</h2>
-            <p class="projects__item__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi explicabo doloremque veniam. Ipsum in hic nostrum laborum sint possimus mollitia voluptatibus reiciendis repudiandae pariatur, officiis vitae delectus quam. Odio, explicabo.</p>
+            <p class="projects__item__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+              explicabo doloremque veniam. Ipsum in hic nostrum laborum sint possimus mollitia voluptatibus reiciendis
+              repudiandae pariatur, officiis vitae delectus quam. Odio, explicabo.</p>
             <div class="projects__item__icons">
               <i class="devicon-angular-plain projects__item__icon"></i>
               <i class="devicon-java-plain projects__item__icon"></i>
@@ -171,7 +341,9 @@
           <img src="" alt="" class="projects__item__img">
           <div class="projects__item__text" data-aos="fade-left" data-aos-delay="100">
             <h2 class="projects__item__title">Drone Photo Gallery</h2>
-            <p class="projects__item__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi explicabo doloremque veniam. Ipsum in hic nostrum laborum sint possimus mollitia voluptatibus reiciendis repudiandae pariatur, officiis vitae delectus quam. Odio, explicabo.</p>
+            <p class="projects__item__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+              explicabo doloremque veniam. Ipsum in hic nostrum laborum sint possimus mollitia voluptatibus reiciendis
+              repudiandae pariatur, officiis vitae delectus quam. Odio, explicabo.</p>
             <div class="projects__item__icons">
               <i class="devicon-angular-plain projects__item__icon"></i>
               <i class="devicon-javascript-plain projects__item__icon"></i>
@@ -184,20 +356,28 @@
       <h2 class="contact__title" data-aos="fade-left">Contact me</h2>
       <hr class="section__title__hr">
       <p class="contact__text">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="contact__icon-email">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" /> 
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="contact__icon-email">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
         </svg>
-        <span class="contact__text-email" data-aos="fade-left" data-aos-delay="100">dominikaduralek@gmail.com</span><span class="contact__copied">Copied!</span>
+        <span class="contact__text-email" data-aos="fade-left"
+          data-aos-delay="100">dominikaduralek@gmail.com</span><span class="contact__copied">Copied!</span>
       </p>
       <p class="contact__text">
         <svg viewBox="0 0 128 128" class="contact__icon-linkedin">
-          <path d="M116 3H12a8.91 8.91 0 00-9 8.8v104.42a8.91 8.91 0 009 8.78h104a8.93 8.93 0 009-8.81V11.77A8.93 8.93 0 00116 3zM39.17 107H21.06V48.73h18.11zm-9-66.21a10.5 10.5 0 1110.49-10.5 10.5 10.5 0 01-10.54 10.48zM107 107H88.89V78.65c0-6.75-.12-15.44-9.41-15.44s-10.87 7.36-10.87 15V107H50.53V48.73h17.36v8h.24c2.42-4.58 8.32-9.41 17.13-9.41C103.6 47.28 107 59.35 107 75z"></path>
-          </svg>
-        <a href="https://www.linkedin.com/in/dominika-dura%C5%82ek-4890252ba/" target="_blank" data-aos="fade-left" data-aos-delay="200">My LinkedIn profile</a>
+          <path
+            d="M116 3H12a8.91 8.91 0 00-9 8.8v104.42a8.91 8.91 0 009 8.78h104a8.93 8.93 0 009-8.81V11.77A8.93 8.93 0 00116 3zM39.17 107H21.06V48.73h18.11zm-9-66.21a10.5 10.5 0 1110.49-10.5 10.5 10.5 0 01-10.54 10.48zM107 107H88.89V78.65c0-6.75-.12-15.44-9.41-15.44s-10.87 7.36-10.87 15V107H50.53V48.73h17.36v8h.24c2.42-4.58 8.32-9.41 17.13-9.41C103.6 47.28 107 59.35 107 75z">
+          </path>
+        </svg>
+        <a href="https://www.linkedin.com/in/dominika-dura%C5%82ek-4890252ba/" target="_blank" data-aos="fade-left"
+          data-aos-delay="200">My LinkedIn profile</a>
       </p>
       <p class="contact__text">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="contact__icon-cv">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="contact__icon-cv">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
         </svg>
         <a href="CV-Dominika-Duralek.pdf" target="_blank" data-aos="fade-left" data-aos-delay="300">My CV</a>
       </p>

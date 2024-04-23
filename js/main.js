@@ -8,8 +8,10 @@ import '../css/components/skills.css';
 import '../css/components/projects.css';
 import '../css/components/contact.css';
 import '../css/components/footer.css';
+import '../css/components/mobile-nav.css';
 import '../css/utils.css';
 
+import mobileNav from './utils/mobile-nav';
 import darkMode from './utils/dark-mode';
 
 import AOS from "aos";
@@ -21,6 +23,7 @@ AOS.init({
   offset: 100,
 });
 
+mobileNav();
 darkMode();
 
 window.onload = function () {
@@ -48,6 +51,7 @@ function goUp() {
   document.documentElement.scrollTop = 0;
 }
 
+// Alert user about a copied email
 let emailText = document.querySelector('.contact__text-email');
 
 emailText.addEventListener('click', function () {
@@ -61,12 +65,6 @@ function showCopyAlert() {
   copyAlert.classList.add('show');
   setTimeout(() => { copyAlert.classList.remove('show'); }, 1000);
 }
-
-// div1 div2 div3
-// div1 = flex div2 = none div3 = none
-// link1 click = div1 flex div2 none div3 none
-// link2 click = div2 flex div1 none div3 none
-// link3 click = div3 flex div1 none div2 none
 
 document.querySelector('#about__link-summary').addEventListener('click', function () {
   document.querySelector('.about__summary').style.display = 'flex';
@@ -86,6 +84,7 @@ document.querySelector('#about__link-hobbies').addEventListener('click', functio
   document.querySelector('.about__hobbies').style.display = 'flex';
 });
 
+// Cursor animation
 var cursor = document.getElementById("circle");
 var cursorSmall = document.getElementById("circle-small");
 

@@ -123,21 +123,121 @@
     .about {
         padding-top: 10rem;
         padding-bottom: 5rem;
-        gap: 1rem;
-        min-height: 48rem;
     }
     
     .about__title {
-        font-size: var(--size-4xl);
+        font-size: var(--size-3xl);
+    }
+    
+    .about__content {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding-top: 1rem;
+        padding-left: 2rem;
+        align-items: center;
+    }
+    
+    .about__img {
+        width: 12rem;
+        height: 12rem;
+    }
+    
+    .about__text {
+        font-size: var(--size-s);
+    }
+
+    .about__menu {
+        gap: 2rem;
+        font-size: var(--size-l);
+    }
+    
+    .about__summary {
+        width: 60ch;
+    }
+    
+    .about__experience {
+        width: 60ch;
+    }
+    
+    .about__hobbies {
+        width: 60ch;
+    }
+    
+    .about__hobbies__items {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+    
+    .about__hobbies__list {
+        line-height: 3.5em;
+    }
+    
+    .about__hobbies__icon {
+        width: var(--size-xl);
+        height: var(--size-xl);
+    }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    .about {
+        padding-top: 10rem;
+        padding-bottom: 5rem;
     }
     
     .about__content {
         display: flex;
         flex-direction: row;
-        gap: 6rem;
+        gap: 4rem;
         padding-top: 4rem;
         padding-left: 2rem;
         align-items: unset;
+    }
+    
+    .about__img {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .about__menu {
+        font-size: var(--size-xl);
+    }
+    
+    .about__hobbies__items {
+        gap: 4rem;
+    }
+    
+    .about__hobbies__icon {
+        width: var(--size-l);
+        height: var(--size-l);
+    }  
+}
+
+/* xl */
+@media (min-width: 1280px) {
+    .about__summary {
+        width: 70ch;
+    }
+    
+    .about__experience {
+        width: 70ch;
+    }
+    
+    .about__hobbies {
+        width: 70ch;
+    }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+    .about__title {
+        font-size: var(--size-4xl);
+    }
+    
+    .about__content {
+        gap: 6rem;
     }
     
     .about__img {
@@ -167,27 +267,11 @@
     }
     
     .about__hobbies__items {
-        display: flex;
-        flex-direction: row;
         gap: 10rem;
-    }
-    
-    .about__hobbies__list {
-        line-height: 3.5em;
     }
     
     .about__hobbies__icon {
         width: var(--size-2xl);
         height: var(--size-2xl);
-    }
+    }   
 }
-
-/* lg */
-/* @media (min-width: 1024px) {} */
-
-/* xl */
-/* @media (min-width: 1280px) {} */
-
-/* 2xl */
-/* @media (min-width: 1536px) {} */
-

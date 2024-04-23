@@ -55,23 +55,25 @@
         padding-bottom: 5rem;
         align-items: unset;
     }
-    
+
     .hero__title {
-        font-size: var(--size-6xl);
+        font-size: var(--size-4xl);
     }
-    
+
     .hero__description {
-        font-size: var(--size-xl);
+        font-size: var(--size-base);
         width: 60ch;
         text-align: unset;
     }
 }
 
 /* lg */
-/* @media (min-width: 1024px) {} */
+@media (min-width: 1024px) {
+    .hero__title {
+        font-size: var(--size-6xl);
+    }
 
-/* xl */
-/* @media (min-width: 1280px) {} */
-
-/* 2xl */
-/* @media (min-width: 1536px) {} */
+    .hero__description {
+        font-size: var(--size-xl);
+    }
+}
