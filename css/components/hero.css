@@ -69,6 +69,13 @@
 
 /* lg */
 @media (min-width: 1024px) {
+    .hero {
+        gap: 1rem;
+        padding-top: 12rem;
+        justify-content: unset;
+        align-items: unset;
+    }
+
     .hero__title {
         font-size: var(--size-6xl);
     }
