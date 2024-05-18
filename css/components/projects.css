@@ -39,6 +39,10 @@
     align-items: center;
 }
 
+.projects__item a:hover { 
+    color: var(--color-accent400);
+}
+
 .projects__item__img {
     width: 8rem;
     height: 8rem;
@@ -211,6 +215,6 @@
     }
     
     .projects__item__icon {
-        font-size: var(--size-6xl);
+        font-size: var(--size-5xl);
     }
 }
