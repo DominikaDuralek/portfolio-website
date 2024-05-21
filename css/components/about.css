@@ -24,7 +24,8 @@
 .about__img {
     width: 8rem;
     height: 8rem;
-    border: 1px solid var(--color-accent400);
+    border: 2px solid var(--color-accent500);
+    border-radius: 6px;
 }
 
 .about__text {

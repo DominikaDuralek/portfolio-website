@@ -43,9 +43,23 @@
     color: var(--color-accent400);
 }
 
+.projects__item__img-link {
+    border: 0;
+    height: 7rem;
+}
+
 .projects__item__img {
-    width: 8rem;
-    height: 8rem;
+    width: 15rem;
+    height: 7rem;
+    border: 2px solid var(--color-accent500);
+    border-radius: 6px;
+    transition: 0.5s;
+}
+
+.projects__item__img:hover {
+    transform: translateY(5px);
+    transition: 0.5s;
+    filter: drop-shadow(3px 3px var(--color-accent500));
 }
 
 .projects__item__text {
@@ -101,10 +115,15 @@
         margin-top: 4rem;
         align-items: center;
     }
+
+    .projects__item__img-link {
+        border: 0;
+        height: 9rem;
+    }
     
     .projects__item__img {
-        width: 10rem;
-        height: 10rem;
+        width: 19rem;
+        height: 9rem;
     }
     
     .projects__item__text {
@@ -119,7 +138,6 @@
     .projects__item__description {
         width: 60ch;
         font-size: var(--size-base);
-        /* text-align: unset; */
     }
     
     .projects__item__icon {
@@ -144,7 +162,7 @@
     }
     
     .projects__github {
-        font-size: var(--size-xl);
+        font-size: var(--size-l);
         width: unset;
         text-align: unset;
         line-height: unset;
@@ -157,10 +175,15 @@
         margin-top: 5rem;
         align-items: unset;
     }
+
+    .projects__item__img-link {
+        border: 0;
+        height: 7rem;
+    }
     
     .projects__item__img {
-        width: 11rem;
-        height: 11rem;
+        width: 15rem;
+        height: 7rem;
     }
     
     .projects__item__text {
@@ -169,12 +192,12 @@
     }
     
     .projects__item__title {
-        font-size: var(--size-xl);
+        font-size: var(--size-l);
     }
     
     .projects__item__description {
         width: 50ch;
-        font-size: var(--size-base);
+        font-size: var(--size-s);
         text-align: unset;
     }
     
@@ -185,8 +208,27 @@
 
 /* xl */
 @media (min-width: 1280px) {
+    .projects__github {
+        font-size: var(--size-xl);
+    }
+
+    .projects__item__title {
+        font-size: var(--size-xl);
+    }
+
     .projects__item__description {
         width: 60ch;
+        font-size: var(--size-base);
+    }
+
+    .projects__item__img-link {
+        border: 0;
+        height: 9rem;
+    }
+    
+    .projects__item__img {
+        width: 19rem;
+        height: 9rem;
     }
 }
 
@@ -199,10 +241,16 @@
     .projects__github {
         font-size: var(--size-2xl);
     }
+
+    .projects__item__img-link {
+        border: 0;
+        height: 12rem;
+    }
+    
     
     .projects__item__img {
-        width: 20rem;
-        height: 20rem;
+        width: 25rem;
+        height: 12rem;
     }
     
     .projects__item__title {
