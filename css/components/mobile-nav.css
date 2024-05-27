@@ -29,6 +29,7 @@
     transition: color 0.3s;
   }
   
+  /* Line between theme toggle and the other buttons */
   .mobile-nav__link-line {
     border: 1px solid var(--color-light300);
     padding-right: 1.5em;

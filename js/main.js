@@ -17,7 +17,7 @@ import darkMode from './utils/dark-mode';
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-// init AOS animation
+// Init AOS animation
 AOS.init({
   duration: 800,
   offset: 100,
@@ -26,6 +26,7 @@ AOS.init({
 mobileNav();
 darkMode();
 
+// Remove FOUC
 window.onload = function () {
   document.body.style.visibility = 'visible';
 }
@@ -54,6 +55,7 @@ function goUp() {
 // Alert user about a copied email
 let emailText = document.querySelector('.contact__text-email');
 
+// Email copied on click alert
 emailText.addEventListener('click', function () {
   let copyText = event.target.textContent;
   navigator.clipboard.writeText(copyText);
@@ -66,6 +68,7 @@ function showCopyAlert() {
   setTimeout(() => { copyAlert.classList.remove('show'); }, 1000);
 }
 
+// Show/hide about sections
 document.querySelector('#about__link-summary').addEventListener('click', function () {
   document.querySelector('.about__summary').style.display = 'flex';
   document.querySelector('.about__experience').style.display = 'none';
@@ -96,6 +99,7 @@ document.body.addEventListener("mousemove", function (e) {
     cursorSmall.style.top = e.clientY + "px";
 });
 
+// Shrink cursor effect when hovering over links
 const allLinks = document.querySelectorAll('a, button, .about__link, .contact__text-email');
 allLinks.forEach(link => {
   link.onmouseover = function(){

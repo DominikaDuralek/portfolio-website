@@ -3,9 +3,10 @@ const mobileNav = () => {
     const mobileNav = document.querySelector('.mobile-nav');
     const mobileLinks = document.querySelectorAll('.mobile-nav__link');
   
-    // State
+    // State - open/closed
     let isMobileNavOpen = false;
   
+    // Open/close mobile nav when bars icon gets clicked
     headerBtn.addEventListener('click', () => {
       isMobileNavOpen = !isMobileNavOpen;
       if (isMobileNavOpen) {
@@ -17,6 +18,7 @@ const mobileNav = () => {
       }
     });
   
+    // Hide mobile nav when link gets clicked
     mobileLinks.forEach(link => {
       link.addEventListener('click', () => {
         isMobileNavOpen = false;
