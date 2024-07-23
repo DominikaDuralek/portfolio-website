@@ -22,13 +22,13 @@
 
 .hero__title-span2 {
     color: var(--color-accent500);
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     transition: color 1.5s;
 }
 
 .hero__title-span3 {
     color: var(--color-accent400);
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     transition: color 1.5s;
 }
 
